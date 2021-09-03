@@ -25,3 +25,19 @@ class Restaurant:
     def increment_number_served(self, increment):
         """Increment the number of people that have been served."""
         self.number_served += increment
+
+class IceCreamStand(Restaurant):
+    """ An attempt to represent an Ice Cream Stand kind of restaurant.""" 
+    
+    def __init__(self, restaurant_name, cuisine_type):
+        """ 
+        Initialize the attributes of the parent class.
+        Initialize the attributes to describe an Ice Cream Stand Restaurant.
+        """
+        super().__init__(restaurant_name, cuisine_type)
+        self.flavors = ["strawberry", "cream", "chocolate", "vanilla"]
+
+    def show_flavors(self):
+        """ Show the flavors the stand offers."""
+        print(self.flavors)
+    
