@@ -33,7 +33,7 @@ class Battery:
         self.battery_size = battery_size
 
     def describe_battery(self):
-        """Print a statemnt describing the battery size."""
+        """Print a statement describing the battery size."""
         print(f"This car has a {self.battery_size}-kWh battery.")
 
     def get_range(self):
